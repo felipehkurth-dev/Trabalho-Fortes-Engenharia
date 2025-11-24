@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Layout com Sidebar</title>
+  <link rel="stylesheet" href="encarregado.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <img src="/Trabalho-Fortes-Engenharia-main/Trabalho-CC1N-SS1N-fabricio-main/IMG/logo.png" alt="Logo Fortes Engenharia">
+            </div>
+
+            <a class="menu-btn" href="#">
+            <span class="dot"></span>
+            <span>Minhas Horas</span>
+            </a>
+        </div>
+
+        <div class="middle"></div>
+
+        <div>
+            <div class="profile">
+                <div class="avatar">
+                    <img src="/Trabalho-CC1N-SS1N-fabricio-main/Trabalho fabricio/IMG/profile.png" alt="Avatar">
+                </div>
+
+                <div class="info">
+                    <div class="name">Thales Chequer</div>
+                    <div class="role">Técnico</div>
+                </div>
+            </div>
+
+        <div class="actions">
+            <button class="btn settings">Configurações</button>
+            <a class="btn logout" href="../index.html">Sair</a>
+        </div>
+
+        <div class="footer">
+            <div>Versão 1.0.0</div>
+            <div>© 2025 Fortes Engenharia</div>
+        </div>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+    <h1 class="titulo">Olá, Thales Chequer</h1>
+    <p class="subtitulo">Visualize e confirme suas horas extras trabalhadas</p>
+
+    <!-- CARDS DE HORAS -->
+    <div class="cards">
+        <div class="card">
+            <h3>Total de Horas</h3>
+            <p class="valor">17h</p>
+        </div>
+
+        <div class="card">
+            <h3>Confirmadas</h3>
+            <p class="valor verde">2</p>
+        </div>
+
+        <div class="card">
+            <h3>Pendentes</h3>
+            <p class="valor amarelo">1</p>
+        </div>
+    </div>
+
+    <!-- HORAS POR OBRA -->
+    <div class="box">
+        <h2>Horas por Obra</h2>
+
+        <div class="obra-item">
+            <span>Obra Vitória Marina</span>
+            <div class="bar">
+            <div class="fill" style="width: 100%;"></div>
+        </div>
+        <span class="valor-bar">15h</span>
+    </div>
+
+    <div class="obra-item">
+        <span>Obra Ponte Norte</span>
+        <div class="bar">
+            <div class="fill" style="width: 10%;"></div>
+        </div>
+        <span class="valor-bar">1h</span>
+    </div>
+
+    <div class="obra-item">
+        <span>Obra Centro Logístico</span>
+        <div class="bar">
+          <div class="fill" style="width: 10%;"></div>
+        </div>
+        <span class="valor-bar">1h</span></div>
+    </div>
+
+    <!-- FILTROS -->
+    <div class="box filtros">
+        <div class="filtro">
+        <label>Obra</label>
+        <select>
+            <option>Todas as obras</option>
+        </select>
+        </div>
+
+        <div class="filtro">
+        <label>Data Início</label>
+            <input type="date">
+        </div>
+
+        <div class="filtro">
+        <label>Data Fim</label>
+            <input type="date">
+        </div>
+    </div>
+
+    <!-- TABELA -->
+    <div class="box">
+        <h2>Registros Detalhados</h2>
+
+        <table class="tabela">
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Obra</th>
+                <th>Horário</th>
+                <th>Total Horas</th>
+                <th>Status</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>14/11/2025</td>
+                <td>Obra Vitória Marina<br><span class="codigo">VM-2025</span></td>
+                <td>17:00 - 19:00</td>
+                <td>2h</td>
+                <td><span class="status verde">Confirmada</span></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>09/11/2025</td>
+                <td>Obra Vitória Marina<br><span class="codigo">VM-2025</span></td>
+                <td>18:00 - 20:00</td>
+                <td>2h</td>
+                <td><span class="status verde">Confirmada</span></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>07/11/2025</td>
+                <td>Obra Vitória Marina<br><span class="codigo">VM-2025</span></td>
+                <td>17:30 - 19:30</td>
+                <td>2h</td>
+                <td><span class="status amarelo">Pendente</span></td>
+                <td><button class="confirmar">Confirmar presença</button></td>
+            </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+  </main>
+
+</body>
+</html>

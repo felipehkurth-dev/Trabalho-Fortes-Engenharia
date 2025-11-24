@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #f3f5f8;
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  border-right: 1px solid #e5e7eb;
+  position: fixed;
+  left: 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.logo img {
+  width: 160px;
+}
+
+.menu-btn {
+  width: 100%;
+  background: #0b4b73;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: white;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #ddd;
+}
+.avatar img {
+  width: 100%;
+}
+
+.info .name { font-weight: bold; }
+.info .role { font-size: 13px; color: #777; }
+
+.actions {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.logout {
+  background: transparent;
+}
+
+.footer {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 16px;
+  color: #777;
+}
+
+/* MAIN */
+.main {
+  margin-left: 260px;
+  padding: 32px;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.subtitulo {
+  margin-top: 4px;
+  color: #555;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  flex: 1;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.card .valor {
+  font-size: 26px;
+  margin-top: 8px;
+  font-weight: 700;
+}
+
+.verde { color: #22c55e; }
+.amarelo { color: #eab308; }
+
+/* BOXES */
+.box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 26px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.obra-item {
+  margin-top: 18px;
+}
+
+.bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  margin: 6px 0;
+}
+.fill {
+  height: 10px;
+  background: #0b4b73;
+  border-radius: 6px;
+}
+
+.valor-bar {
+  font-size: 12px;
+  color: #555;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  gap: 16px;
+}
+
+.filtro {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filtro select,
+.filtro input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* TABELA */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.tabela th {
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+  color: #555;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabela td {
+  padding: 14px 12px;
+  font-size: 14px;
+  vertical-align: middle;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.codigo {
+  font-size: 11px;
+  color: #888;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status.verde {
+  background: #dcfce7;
+  color: #2E7D32;
+}
+
+.status.amarelo {
+  background: #ffd9c3;
+  color: #F25C05;
+}
+
+/* Botão confirmar */
+.confirmar {
+  background: #0396A6;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
